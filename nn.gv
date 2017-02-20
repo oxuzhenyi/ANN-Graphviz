@@ -1,0 +1,122 @@
+digraph G {
+ 
+    rankdir=LR
+
+    splines=line
+
+    nodesep=.05;
+
+    node [label=""];
+
+    subgraph cluster_0 {
+ 
+    color=white;
+
+    node [style=solid,color=blue4];
+
+    
+    node [shape=circle,height=.5];
+
+    a00 a01 a02 a03 a04 a05 a06 ;
+
+    
+    label = "layer input(7)";
+
+    }
+
+    subgraph cluster_1 {
+ 
+    color=white;
+
+    node [style=solid,color=red2];
+
+    
+    node [shape=circle,height=.5];
+
+    a10 a11 a12 ;
+
+    
+    node [shape=point,height=.02];
+
+    a13 a14 a15 ;
+
+    
+    node [shape=circle,height=.5];
+
+    a19 a110 a111 ;
+
+    
+    label = "layer h1(12)";
+
+    }
+
+    subgraph cluster_2 {
+ 
+    color=white;
+
+    node [style=solid,color=seagreen2];
+
+    
+    node [shape=circle,height=.5];
+
+    a20 ;
+
+    
+    label = "layer out(1)";
+
+    }
+
+    
+
+    a00 -> a10
+a00 -> a11
+a00 -> a12
+a00 -> a19
+a00 -> a110
+a00 -> a111
+a01 -> a10
+a01 -> a11
+a01 -> a12
+a01 -> a19
+a01 -> a110
+a01 -> a111
+a02 -> a10
+a02 -> a11
+a02 -> a12
+a02 -> a19
+a02 -> a110
+a02 -> a111
+a03 -> a10
+a03 -> a11
+a03 -> a12
+a03 -> a19
+a03 -> a110
+a03 -> a111
+a04 -> a10
+a04 -> a11
+a04 -> a12
+a04 -> a19
+a04 -> a110
+a04 -> a111
+a05 -> a10
+a05 -> a11
+a05 -> a12
+a05 -> a19
+a05 -> a110
+a05 -> a111
+a06 -> a10
+a06 -> a11
+a06 -> a12
+a06 -> a19
+a06 -> a110
+a06 -> a111
+a10 -> a20
+a11 -> a20
+a12 -> a20
+a19 -> a20
+a110 -> a20
+a111 -> a20
+
+
+    } 
+    
