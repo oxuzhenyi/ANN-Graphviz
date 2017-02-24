@@ -111,7 +111,7 @@ def makeDefConfig():
     args.update({'output':path + 'nn.png'})
     #visual nodes number
     #args.update({'visual_num':10})
-    args.update({'visual_num':7})
+    args.update({'visual_num':7})#每层显示最大神经元个数
     #layers config:(name,nodes number,color)
     #args.update({'layers_cfg':(('input',7,'blue4'),('h1',12,'red2'),('h2',1,'red2'),('h3',1,'red2'),('out',1,'seagreen2'))})
     args.update({'layers_cfg':(('input',7,'blue4'),('h1',12,'red2'),('out',1,'seagreen2'))})    
